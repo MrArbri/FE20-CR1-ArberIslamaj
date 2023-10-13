@@ -55,41 +55,8 @@ hr {
   color: aliceblue;
 }
 .container img {
-  width: 400px;
-  height: 400px;
-}
-
-@media screen and (width < 480px) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-}
-@media screen and (width 481 < 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
-}
-footer {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.651);
-  text-align: center;
-}
-footer a {
-  text-decoration: none;
-  color: aliceblue;
-}
-footer span {
-  color: aliceblue;
-}
-footer .social img {
-  padding: 20px;
-  width: 30px;
-}
-footer .copyright {
-  text-align: center;
-  color: aliceblue;
+  width: 380px;
+  height: 380px;
 }
 
 .hero {
@@ -154,4 +121,38 @@ footer .copyright {
 }
 .summery p {
   padding: 20px 0px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.651);
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+footer span {
+  color: aliceblue;
+}
+footer .social img {
+  padding: 20px;
+  width: 30px;
+}
+footer .copyright {
+  text-align: center;
+  color: aliceblue;
+}
+
+@media screen and (width < 760px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media screen and (width < 520px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

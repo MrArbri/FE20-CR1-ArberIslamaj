@@ -41,6 +41,8 @@ hr {
     margin: 5px;
 }
 
+// The images on the index file
+
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -62,54 +64,15 @@ hr {
     }
 
     img {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
     }
 }
 
-@media screen and (width < 480px) {
-    .container {
-        grid-template-columns: repeat(1,1fr);
-        width: 100%;
-    }
-}
-
-// @media screen and (width < 768px) {
-//     .container {
-//         grid-template-columns: repeat(2,1fr);
-//         width: 100%;
-//     }
-// }
-
-footer {
-    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.651);
-    text-align: center;
 
 
-    a {
-        text-decoration: none;
-        color: aliceblue;
-    }
 
-    span {
-        color: aliceblue;
-    }
-
-    .social {
-
-        img {
-
-        padding: 20px;
-        width: 30px;
-        }
-    }
-    .copyright {
-        text-align: center;
-        color: aliceblue;
-    }
-}
+// Hero section at the recipe of the month
 
 .hero {
     display: flex;
@@ -155,6 +118,7 @@ footer {
 }
 
 
+
 .bg {
     display: flex;
     justify-content: end;
@@ -166,6 +130,8 @@ footer {
         left: 30px;
     }
 }
+
+// About file
 
 .mission {
     position: absolute;
@@ -187,7 +153,52 @@ footer {
     }
 }
 
+// Footer
+
+footer {
+    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    text-align: center;
 
 
+    a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    span {
+        color: aliceblue;
+    }
+
+    .social {
+
+        img {
+
+        padding: 20px;
+        width: 30px;
+        }
+    }
+    .copyright {
+        text-align: center;
+        color: aliceblue;
+    }
+}
+
+// Media query
+
+@media screen and (width < 760px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+}
+
+@media screen and (width < 520px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
 
 
