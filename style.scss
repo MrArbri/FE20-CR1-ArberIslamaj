@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     img {
     width: 80px;
@@ -29,25 +34,33 @@
 .menu {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-weight: bold;
    
-
-    h5 {
+    a {
+        text-decoration: none;
         color: black;
     }
 }
 
-hr {
-    margin: 5px;
-}
-
 // The images on the index file
 
+.big {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin: 30px;
+    width: 75%;
 
     div {
         position: relative;
@@ -56,21 +69,18 @@ hr {
     p {
         position: absolute;
         bottom: 0;
-        background-color: rgba(19, 19, 19, 0.499);
+        background-color: rgba(19, 19, 19, 0.752);
         width: 100%;
         padding: 10px 0px;
         text-align: center;
-        color: aliceblue;
+        color: whitesmoke;
     }
 
     img {
-        width: 380px;
-        height: 380px;
+        width: 100%;
+        height: 300px;
     }
 }
-
-
-
 
 // Hero section at the recipe of the month
 
@@ -117,87 +127,84 @@ hr {
     }
 }
 
-
+// About file
 
 .bg {
     display: flex;
-    justify-content: end;
-    position: relative;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+   
+    .mission {
+        width: 100%;
 
-    h1 {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-    }
-}
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
 
-// About file
-
-.mission {
-    position: absolute;
-    top: 200px;
-    left: 20px;
-
-    h2 {
-        padding: 20px 0px;
-    }
-}
-
-.summery {
-    position: relative;
-    left: 20px;
-    top: 0px;
-    
-    p {
-        padding: 20px 0px;
+        img {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
 // Footer
 
 footer {
-    
+    bottom: 0px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.651);
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
+    .links {
+        padding-top: 10px;
+    }
 
     a {
         text-decoration: none;
-        color: aliceblue;
+        color: whitesmoke;
     }
 
     span {
-        color: aliceblue;
+        color: whitesmoke;
     }
 
     .social {
-
-        img {
-
-        padding: 20px;
-        width: 30px;
-        }
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+        color: whitesmoke;
     }
     .copyright {
         text-align: center;
-        color: aliceblue;
+        color: whitesmoke;
+        padding-bottom: 10px;
     }
 }
 
 // Media query
 
-@media screen and (width < 760px) {
+@media screen and (width < 821px) {
     .container {
         grid-template-columns: repeat(2,1fr);
         width: 100%;
     }
 }
 
-@media screen and (width < 520px) {
+@media screen and (width < 501px) {
     .container {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .bg {
+        img {
+            width: 100%;
+        }
     }
 }
 
